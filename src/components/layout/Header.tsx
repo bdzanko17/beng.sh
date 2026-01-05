@@ -11,7 +11,6 @@ import { cn } from '@/lib/utils';
 
 const navLinks = [
   { name: 'Home', path: '/' },
-  { name: 'Portfolio', path: '/portfolio' },
   { name: 'About', path: '/about' },
   { name: 'Contact', path: '/contact' },
 ];
@@ -47,18 +46,19 @@ export function Header() {
           <Link
             to="/"
             className={cn(
-              'text-lg font-light tracking-widest transition-all duration-300',
+              'text-lg font-mono tracking-wide transition-all duration-300',
               isTransparent
-                ? 'text-white hover:text-white/80'
-                : 'text-foreground hover:text-foreground/80'
+                ? 'text-primary hover:text-primary/80'
+                : 'text-primary hover:text-primary/80'
             )}
           >
             <motion.span
               initial={{ opacity: 0, x: -20 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.6, delay: 0.2 }}
+              className="flex items-center gap-2"
             >
-              {photographerInfo.name.toUpperCase()}
+              <span className="text-muted-foreground">$</span> {photographerInfo.name.split(' ')[0].toLowerCase()}
             </motion.span>
           </Link>
 
@@ -73,14 +73,19 @@ export function Header() {
                 >
                   <Link
                     to={link.path}
-                    className="relative text-lg leading-7 font-light tracking-wide text-white transition-colors duration-300 hover:text-white/80"
+                    className={cn(
+                      "relative text-sm font-mono tracking-wide transition-colors duration-300",
+                      isTransparent
+                        ? "text-foreground hover:text-primary"
+                        : "text-foreground hover:text-primary"
+                    )}
                   >
                     {link.name}
                     {/* Active underline */}
                     {location.pathname === link.path && (
                       <motion.div
                         layoutId="activeNav"
-                        className="absolute -bottom-1 left-0 right-0 h-px bg-white"
+                        className="absolute -bottom-1 left-0 right-0 h-px bg-primary"
                         transition={{ type: "spring", stiffness: 380, damping: 30 }}
                       />
                     )}
