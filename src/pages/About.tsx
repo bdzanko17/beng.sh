@@ -3,6 +3,7 @@ import { Github, Linkedin, Award, Terminal, MapPin, GraduationCap, Briefcase } f
 import { photographerInfo } from '@/data/photographer';
 import { Separator } from '@/components/ui/separator';
 import { SEOHead } from '@/components/seo/SEOHead';
+import benjaminProfile from '@/assets/benjamin-profile.jpg';
 
 /**
  * About page with DevOps-themed biography and certifications
@@ -13,7 +14,7 @@ export default function About() {
       <SEOHead
         title="About"
         description={`Learn about ${photographerInfo.name}, ${photographerInfo.tagline}. ${photographerInfo.biography.split('\n\n')[0]}`}
-        image={photographerInfo.portraitImage}
+        image={benjaminProfile}
       />
       
       <div className="min-h-screen">
@@ -52,7 +53,7 @@ export default function About() {
                   {/* Profile image */}
                   <div className="aspect-square relative overflow-hidden rounded-lg bg-muted">
                     <img
-                      src={photographerInfo.portraitImage}
+                      src={benjaminProfile}
                       alt={photographerInfo.name}
                       className="absolute inset-0 w-full h-full object-cover"
                     />
@@ -178,7 +179,7 @@ export default function About() {
           </div>
         </section>
 
-        {/* Tech Stack as Clients */}
+        {/* Tech Stack */}
         <section className="py-16 md:py-24 px-6 lg:px-8 border-t border-border">
           <div className="max-w-6xl mx-auto">
             <motion.div

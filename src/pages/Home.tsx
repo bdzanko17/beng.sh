@@ -3,7 +3,7 @@ import { photographerInfo } from '@/data/photographer';
 import { ScrollIndicator } from '@/components/ui/ScrollIndicator';
 import { ScrollReveal } from '@/components/ui/ScrollReveal';
 import { SEOHead } from '@/components/seo/SEOHead';
-import { ArrowRight, Terminal, Server, Container, GitBranch, Cloud, Cpu, Coffee, Shield } from 'lucide-react';
+import { ArrowRight, Terminal, Server, Container, GitBranch, Cloud, Cpu, Shield, Database } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 const FloatingIcon = ({ 
