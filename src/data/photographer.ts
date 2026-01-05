@@ -1,41 +1,43 @@
 import type { PhotographerInfo } from '@/types';
 
 export const photographerInfo: PhotographerInfo = {
-  name: 'Sarah Mitchell',
-  tagline: 'Editorial & Commercial Photographer',
-  heroIntroduction: 'Creating visual narratives that capture authentic moments and timeless stories.',
-  biography: `Sarah Mitchell is an award-winning photographer specializing in editorial and commercial work, with recognition including the International Photography Awards Editorial Photographer of the Year 2023 and PDN Photo Annual Winner 2022. With over a decade of experience, her work has been featured in numerous international publications and exhibitions, collaborating with clients such as Vogue, The New York Times, National Geographic, Adobe, Apple, Nike, and Architectural Digest.
+  name: 'Benjamin Dzanko',
+  tagline: 'Senior DevOps Engineer',
+  heroIntroduction: 'Turning chaos into orchestrated infrastructure poetry. 7+ years of experience keeping systems alive while you sleep.',
+  biography: `Benjamin Dzanko is a Senior DevOps Engineer based in Vienna, Austria with over 7 years of experience in cloud infrastructure, container orchestration, and CI/CD automation. He specializes in building resilient, scalable systems that handle millions of requests while maintaining 99.99% uptime.
 
-Based in New York with an MFA in Photography from the School of Visual Arts, Sarah brings a unique perspective to every project, combining technical excellence with artistic vision. Her approach to photography is deeply rooted in storytelling, believing that every image should convey emotion and meaning beyond its visual appeal.`,
-  approach: `My photography is guided by three principles: authenticity, composition, and light. I believe the best images emerge when subjects feel comfortable and genuine, when composition guides the viewer's eye naturally, and when light reveals the essence of the moment.
+His journey from traditional system administration to modern DevOps practices has given him a unique perspective on infrastructure challenges. Benjamin believes in "Infrastructure as Code" not just as a practice, but as a philosophy—treating every configuration change with the same rigor as application code.
 
-Whether working on editorial assignments or commercial projects, I strive to create images that transcend their immediate purpose and become lasting visual statements.`,
+When he's not debugging production incidents at 3 AM or optimizing Kubernetes clusters, you'll find him contributing to open-source projects, mentoring junior engineers, and drinking way too much Viennese coffee.`,
+  approach: `My DevOps philosophy is guided by three principles: automation first, observability always, and fail gracefully. I believe the best infrastructure is invisible—it just works, scales when needed, and alerts you before problems become outages.
+
+Whether architecting multi-cloud solutions or implementing zero-downtime deployments, I focus on building systems that are not just functional, but maintainable, secure, and cost-effective.`,
   awards: [
-    'International Photography Awards - Editorial Photographer of the Year 2023',
-    'PDN Photo Annual - Winner 2022',
-    'Hasselblad Masters Finalist 2021',
-    'Communication Arts Photography Annual 2020'
+    'AWS Solutions Architect Professional Certified',
+    'Certified Kubernetes Administrator (CKA)',
+    'HashiCorp Terraform Associate',
+    'Google Cloud Professional DevOps Engineer'
   ],
   clients: [
-    'Vogue',
-    'The New York Times',
-    'National Geographic',
-    'Adobe',
-    'Apple',
-    'Nike',
-    'Patagonia',
-    'Architectural Digest'
+    'Docker',
+    'Kubernetes',
+    'AWS / Azure / GCP',
+    'Terraform',
+    'GitLab CI / GitHub Actions',
+    'Prometheus & Grafana',
+    'Ansible',
+    'ArgoCD'
   ],
-  education: 'MFA Photography, School of Visual Arts, New York',
-  location: 'New York, NY',
-  email: 'hello@sarahmitchell.com',
-  phone: '+1 (555) 123-4567',
-  availability: 'Currently booking for Q2 2025',
+  education: 'BSc Computer Science, TU Wien',
+  location: 'Vienna, Austria 🇦🇹',
+  email: 'benjamin.dzanko@example.com',
+  phone: '+43 XXX XXX XXXX',
+  availability: 'Open to opportunities',
   socialLinks: {
-    instagram: 'https://instagram.com/sarahmitchellphoto',
-    linkedin: 'https://linkedin.com/in/sarahmitchell',
-    behance: 'https://behance.net/sarahmitchell'
+    instagram: 'https://github.com/benjamindzanko',
+    linkedin: 'https://linkedin.com/in/benjamindzanko',
+    behance: 'https://github.com/benjamindzanko'
   },
-  // Photo by Joshua Sun on Unsplash
-  portraitImage: 'https://images.unsplash.com/photo-1585279968680-6606ee6ed134?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MDA2OTF8MHwxfHJhbmRvbXx8fHx8fHx8fDE3NjI3Njk1NjB8&ixlib=rb-4.1.0&q=80&w=1080'
+  // DevOps themed profile placeholder
+  portraitImage: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxMjA3fDB8MXxzZWFyY2h8MTV8fG1hbiUyMHBvcnRyYWl0fGVufDB8fHx8MTY4MTIzNDU2Nw&ixlib=rb-4.0.3&q=80&w=1080'
 };
