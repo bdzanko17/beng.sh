@@ -30,7 +30,7 @@ Whether architecting multi-cloud solutions or implementing zero-downtime deploym
   ],
   education: 'BSc Computer Science, TU Wien',
   location: 'Vienna, Austria 🇦🇹',
-  email: 'benjamin.dzanko@example.com',
+  email: 'bdzanko1@gmail.com',
   phone: '+43 XXX XXX XXXX',
   availability: 'Open to opportunities',
   socialLinks: {
