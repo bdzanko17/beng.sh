@@ -5,61 +5,61 @@
 /* DevOps Terminal Theme - Dark mode by default with neon accents */
 
 :root {
-  --background: hsl(220 20% 6%);
-  --foreground: hsl(160 100% 70%);
-  --card: hsl(220 20% 10%);
-  --card-foreground: hsl(160 100% 70%);
-  --popover: hsl(220 20% 10%);
-  --popover-foreground: hsl(160 100% 70%);
-  --primary: hsl(160 100% 50%);
-  --primary-foreground: hsl(220 20% 6%);
-  --secondary: hsl(280 100% 65%);
+  --background: hsl(0 0% 98%);
+  --foreground: hsl(220 20% 12%);
+  --card: hsl(0 0% 100%);
+  --card-foreground: hsl(220 20% 12%);
+  --popover: hsl(0 0% 100%);
+  --popover-foreground: hsl(220 20% 12%);
+  --primary: hsl(160 100% 30%);
+  --primary-foreground: hsl(0 0% 100%);
+  --secondary: hsl(280 80% 55%);
   --secondary-foreground: hsl(0 0% 100%);
-  --muted: hsl(220 15% 18%);
-  --muted-foreground: hsl(160 40% 50%);
-  --accent: hsl(45 100% 55%);
-  --accent-foreground: hsl(220 20% 6%);
-  --destructive: hsl(0 85% 60%);
+  --muted: hsl(220 15% 92%);
+  --muted-foreground: hsl(220 10% 45%);
+  --accent: hsl(45 100% 50%);
+  --accent-foreground: hsl(220 20% 12%);
+  --destructive: hsl(0 85% 55%);
   --destructive-foreground: hsl(0 0% 100%);
-  --border: hsl(160 50% 20%);
-  --input: hsl(160 50% 20%);
-  --ring: hsl(160 100% 50%);
+  --border: hsl(220 15% 85%);
+  --input: hsl(220 15% 85%);
+  --ring: hsl(160 100% 30%);
   --radius: 0.5rem;
   
   /* DevOps specific colors */
-  --terminal-green: hsl(160 100% 50%);
-  --docker-blue: hsl(200 100% 50%);
-  --kubernetes-blue: hsl(210 100% 60%);
-  --aws-orange: hsl(30 100% 55%);
+  --terminal-green: hsl(160 100% 30%);
+  --docker-blue: hsl(200 100% 40%);
+  --kubernetes-blue: hsl(210 100% 50%);
+  --aws-orange: hsl(30 100% 45%);
   
   /* Sidebar */
-  --sidebar-background: hsl(220 20% 8%);
-  --sidebar-foreground: hsl(160 100% 70%);
-  --sidebar-primary: hsl(160 100% 50%);
-  --sidebar-primary-foreground: hsl(220 20% 6%);
-  --sidebar-accent: hsl(220 15% 18%);
-  --sidebar-accent-foreground: hsl(160 100% 70%);
-  --sidebar-border: hsl(160 50% 20%);
-  --sidebar-ring: hsl(160 100% 50%);
+  --sidebar-background: hsl(0 0% 96%);
+  --sidebar-foreground: hsl(220 20% 12%);
+  --sidebar-primary: hsl(160 100% 30%);
+  --sidebar-primary-foreground: hsl(0 0% 100%);
+  --sidebar-accent: hsl(220 15% 92%);
+  --sidebar-accent-foreground: hsl(220 20% 12%);
+  --sidebar-border: hsl(220 15% 85%);
+  --sidebar-ring: hsl(160 100% 30%);
 
   /* Design System Variables */
-  --context-card-border: hsl(160 50% 20%);
-  --ds-red-800: hsl(0 85% 60%);
-  --ds-red-900: hsl(0 85% 50%);
-  --ds-amber-800: hsl(45 100% 55%);
+  --context-card-border: hsl(220 15% 85%);
+  --ds-red-800: hsl(0 85% 55%);
+  --ds-red-900: hsl(0 85% 45%);
+  --ds-amber-800: hsl(45 100% 50%);
   --ds-amber-850: hsl(33 96% 42%);
-  --ds-gray-100: hsl(220 15% 12%);
-  --ds-gray-400: hsl(220 15% 18%);
-  --ds-gray-700: hsl(220 10% 45%);
-  --ds-gray-1000: hsl(160 100% 70%);
-  --ds-gray-1000-h: hsl(160 80% 60%);
-  --ds-gray-alpha-200: hsla(160, 100%, 50%, 0.08);
-  --ds-gray-alpha-400: hsla(160, 100%, 50%, 0.14);
-  --ds-background-100: hsl(220 20% 4%);
+  --ds-gray-100: hsl(220 15% 95%);
+  --ds-gray-400: hsl(220 15% 85%);
+  --ds-gray-700: hsl(220 10% 55%);
+  --ds-gray-1000: hsl(220 20% 12%);
+  --ds-gray-1000-h: hsl(220 15% 25%);
+  --ds-gray-alpha-200: hsla(220, 20%, 12%, 0.06);
+  --ds-gray-alpha-400: hsla(220, 20%, 12%, 0.12);
+  --ds-background-100: hsl(0 0% 100%);
   --ds-focus-color: var(--ring);
   --ds-focus-ring: 0 0 0 2px var(--ds-background-100), 0 0 0 4px var(--ds-focus-color);
-  --ds-shadow-border: 0 0 0 1px hsla(160, 100%, 50%, 0.2);
-  --ds-shadow-small: 0px 2px 4px hsla(160, 100%, 50%, 0.1);
+  --ds-shadow-border: 0 0 0 1px hsla(220, 20%, 12%, 0.1);
+  --ds-shadow-small: 0px 2px 4px hsla(220, 20%, 12%, 0.08);
   --ds-shadow-border-small: var(--ds-shadow-border), var(--ds-shadow-small);
 }
 
