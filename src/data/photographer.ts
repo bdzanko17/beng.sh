@@ -36,7 +36,8 @@ Whether architecting multi-cloud solutions or implementing zero-downtime deploym
   socialLinks: {
     instagram: 'https://github.com/bdzanko17',
     linkedin: 'https://www.linkedin.com/in/benjamin-dzanko-86b061173/',
-    behance: 'https://github.com/bdzanko17'
+    behance: 'https://github.com/bdzanko17',
+    buyMeACoffee: 'https://buymeacoffee.com/benga.sh'
   },
   portraitImage: ''
 };
