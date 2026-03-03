@@ -58,7 +58,7 @@ export function Header() {
               transition={{ duration: 0.6, delay: 0.2 }}
               className="flex items-center gap-2"
             >
-              <span className="text-muted-foreground">$</span> {photographerInfo.name.split(' ')[0].toLowerCase()}
+              <span className="text-muted-foreground">$</span> benga.sh
             </motion.span>
           </Link>
 
