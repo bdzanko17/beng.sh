@@ -3,7 +3,7 @@ import { photographerInfo } from '@/data/photographer';
 import { ScrollIndicator } from '@/components/ui/ScrollIndicator';
 import { ScrollReveal } from '@/components/ui/ScrollReveal';
 import { SEOHead } from '@/components/seo/SEOHead';
-import { ArrowRight, Terminal, Server, Container, GitBranch, Cloud, Cpu, Shield, Database } from 'lucide-react';
+import { ArrowRight, Terminal, Server, Container, GitBranch, Cloud, Cpu, Shield, Database, Bot, Workflow } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 const FloatingIcon = ({ 
@@ -73,7 +73,7 @@ const skills = [
   {
     category: "AI & MCP",
     icon: Cpu,
-    items: ["MCP Servers", "AI Agents", "LLM Ops", "RAG Pipelines"],
+    items: ["MCP Servers", "AI Agents", "LLM Ops", "RAG Pipelines", "Prompt Engineering", "Tool Use & Function Calling"],
   },
 ];
 
@@ -239,6 +239,136 @@ export default function Home() {
                 </ScrollReveal>
               ))}
             </div>
+          </div>
+        </section>
+
+        {/* AI & MCP Section */}
+        <section className="py-24 md:py-32 px-6 lg:px-8 bg-background border-t border-border">
+          <div className="max-w-6xl mx-auto">
+            <ScrollReveal>
+              <div className="text-center mb-16">
+                <div className="font-mono text-primary mb-4">$ cat ai-mcp.md</div>
+                <h2 className="text-4xl md:text-5xl font-bold mb-4">
+                  AI Agents & MCP
+                </h2>
+                <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+                  The next evolution of DevOps—AI-powered automation and the Model Context Protocol.
+                </p>
+              </div>
+            </ScrollReveal>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+              <ScrollReveal delay={0.1}>
+                <motion.div
+                  whileHover={{ scale: 1.02, y: -5 }}
+                  className="group bg-card border border-border rounded-lg p-8 hover:border-primary/50 transition-all duration-300 hover:glow-primary h-full"
+                >
+                  <div className="flex items-center gap-3 mb-4">
+                    <Bot className="text-primary group-hover:scale-110 transition-transform" size={32} />
+                    <h3 className="font-semibold text-xl text-foreground">AI Agents</h3>
+                  </div>
+                  <p className="text-muted-foreground leading-relaxed mb-4">
+                    AI Agents are autonomous systems that use LLMs to reason, plan, and execute multi-step tasks. 
+                    Unlike simple chatbots, agents can use tools, access APIs, browse the web, write and run code—making 
+                    them powerful partners in DevOps workflows like incident response, infrastructure provisioning, and log analysis.
+                  </p>
+                  <div className="flex flex-wrap gap-2">
+                    {["Autonomous Reasoning", "Tool Use", "Multi-Step Planning", "Code Generation"].map((item) => (
+                      <span key={item} className="text-xs font-mono bg-muted px-2 py-1 rounded text-muted-foreground">
+                        {item}
+                      </span>
+                    ))}
+                  </div>
+                </motion.div>
+              </ScrollReveal>
+
+              <ScrollReveal delay={0.2}>
+                <motion.div
+                  whileHover={{ scale: 1.02, y: -5 }}
+                  className="group bg-card border border-border rounded-lg p-8 hover:border-primary/50 transition-all duration-300 hover:glow-primary h-full"
+                >
+                  <div className="flex items-center gap-3 mb-4">
+                    <Workflow className="text-primary group-hover:scale-110 transition-transform" size={32} />
+                    <h3 className="font-semibold text-xl text-foreground">MCP (Model Context Protocol)</h3>
+                  </div>
+                  <p className="text-muted-foreground leading-relaxed mb-4">
+                    MCP is an open standard by Anthropic that provides a universal protocol for connecting AI models to 
+                    external tools and data sources. Think of it as "USB-C for AI"—MCP servers expose capabilities 
+                    (tools, resources, prompts) that any MCP-compatible AI client can discover and use.
+                  </p>
+                  <div className="flex flex-wrap gap-2">
+                    {["Open Standard", "Tool Discovery", "Resource Access", "Universal Protocol"].map((item) => (
+                      <span key={item} className="text-xs font-mono bg-muted px-2 py-1 rounded text-muted-foreground">
+                        {item}
+                      </span>
+                    ))}
+                  </div>
+                </motion.div>
+              </ScrollReveal>
+
+              <ScrollReveal delay={0.3}>
+                <motion.div
+                  whileHover={{ scale: 1.02, y: -5 }}
+                  className="group bg-card border border-border rounded-lg p-8 hover:border-primary/50 transition-all duration-300 hover:glow-primary h-full"
+                >
+                  <div className="flex items-center gap-3 mb-4">
+                    <Database className="text-primary group-hover:scale-110 transition-transform" size={32} />
+                    <h3 className="font-semibold text-xl text-foreground">RAG Pipelines</h3>
+                  </div>
+                  <p className="text-muted-foreground leading-relaxed mb-4">
+                    Retrieval-Augmented Generation combines the power of LLMs with your own data. By embedding documents 
+                    into vector databases and retrieving relevant context at query time, RAG pipelines let AI agents 
+                    answer questions grounded in your infrastructure docs, runbooks, and knowledge bases.
+                  </p>
+                  <div className="flex flex-wrap gap-2">
+                    {["Vector Databases", "Embeddings", "Context Retrieval", "Knowledge Grounding"].map((item) => (
+                      <span key={item} className="text-xs font-mono bg-muted px-2 py-1 rounded text-muted-foreground">
+                        {item}
+                      </span>
+                    ))}
+                  </div>
+                </motion.div>
+              </ScrollReveal>
+
+              <ScrollReveal delay={0.4}>
+                <motion.div
+                  whileHover={{ scale: 1.02, y: -5 }}
+                  className="group bg-card border border-border rounded-lg p-8 hover:border-primary/50 transition-all duration-300 hover:glow-primary h-full"
+                >
+                  <div className="flex items-center gap-3 mb-4">
+                    <Cpu className="text-primary group-hover:scale-110 transition-transform" size={32} />
+                    <h3 className="font-semibold text-xl text-foreground">LLM Ops & DevOps + AI</h3>
+                  </div>
+                  <p className="text-muted-foreground leading-relaxed mb-4">
+                    LLM Ops brings DevOps principles to AI—CI/CD for models, monitoring for inference, and 
+                    cost optimization for API calls. Combined with AI Agents and MCP, this enables 
+                    self-healing infrastructure, intelligent alerting, and automated incident response.
+                  </p>
+                  <div className="flex flex-wrap gap-2">
+                    {["Model Deployment", "Inference Monitoring", "Cost Optimization", "Self-Healing Infra"].map((item) => (
+                      <span key={item} className="text-xs font-mono bg-muted px-2 py-1 rounded text-muted-foreground">
+                        {item}
+                      </span>
+                    ))}
+                  </div>
+                </motion.div>
+              </ScrollReveal>
+            </div>
+
+            {/* Code example */}
+            <ScrollReveal delay={0.5}>
+              <div className="mt-12 bg-card/80 backdrop-blur border border-border rounded-lg p-6 max-w-2xl mx-auto font-mono text-left text-sm md:text-base">
+                <div className="text-muted-foreground text-xs mb-2"># MCP Server Example:</div>
+                <div className="space-y-1">
+                  <p><span className="text-secondary">server</span> = <span className="text-primary">MCPServer</span>(<span className="text-accent">"devops-tools"</span>)</p>
+                  <p></p>
+                  <p><span className="text-secondary">@server</span>.<span className="text-primary">tool</span>()</p>
+                  <p><span className="text-secondary">def</span> <span className="text-primary">get_pod_status</span>(namespace: str):</p>
+                  <p className="pl-4"><span className="text-muted-foreground"># AI agent can now check K8s pods</span></p>
+                  <p className="pl-4"><span className="text-secondary">return</span> kubectl.get_pods(namespace)</p>
+                </div>
+              </div>
+            </ScrollReveal>
           </div>
         </section>
 

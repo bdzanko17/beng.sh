@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { Github, Linkedin, Award, Terminal, MapPin, GraduationCap, Briefcase } from 'lucide-react';
+import { Github, Linkedin, Award, Terminal, MapPin, GraduationCap, Briefcase, Bot, Workflow, Database, Cpu } from 'lucide-react';
 import { photographerInfo } from '@/data/photographer';
 import { Separator } from '@/components/ui/separator';
 import { SEOHead } from '@/components/seo/SEOHead';
@@ -173,6 +173,48 @@ export default function About() {
                 >
                   <Award className="text-accent shrink-0" size={24} />
                   <span className="font-mono text-sm">{award}</span>
+                </motion.div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* AI & MCP Expertise */}
+        <section className="py-16 md:py-24 px-6 lg:px-8 border-t border-border">
+          <div className="max-w-6xl mx-auto">
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              className="text-center mb-12"
+            >
+              <div className="font-mono text-primary mb-4">$ cat ai-expertise.yml</div>
+              <h2 className="text-3xl md:text-4xl font-bold">AI & MCP Expertise</h2>
+              <p className="text-muted-foreground mt-4 max-w-2xl mx-auto">
+                Bridging DevOps and AI—building MCP servers, deploying AI Agents, and integrating LLMs into infrastructure workflows.
+              </p>
+            </motion.div>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              {[
+                { icon: Bot, title: "AI Agents", desc: "Building autonomous agents that handle incident response, infrastructure provisioning, and intelligent monitoring." },
+                { icon: Workflow, title: "MCP Servers", desc: "Developing Model Context Protocol servers that expose DevOps tools to AI models via a universal standard." },
+                { icon: Database, title: "RAG Pipelines", desc: "Implementing retrieval-augmented generation for infrastructure docs, runbooks, and knowledge bases." },
+                { icon: Cpu, title: "LLM Ops", desc: "Applying DevOps principles to AI—CI/CD for models, inference monitoring, and cost optimization." },
+              ].map((item, index) => (
+                <motion.div
+                  key={item.title}
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ delay: index * 0.1 }}
+                  className="flex items-start gap-4 bg-card border border-border rounded-lg p-5 hover:border-primary/50 transition-colors"
+                >
+                  <item.icon className="text-primary shrink-0 mt-1" size={24} />
+                  <div>
+                    <span className="font-mono text-sm font-semibold text-foreground">{item.title}</span>
+                    <p className="text-muted-foreground text-sm mt-1">{item.desc}</p>
+                  </div>
                 </motion.div>
               ))}
             </div>
