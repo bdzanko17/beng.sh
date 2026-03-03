@@ -70,6 +70,11 @@ const skills = [
     icon: Shield,
     items: ["Vault", "SOPS", "Trivy", "Falco"],
   },
+  {
+    category: "AI & MCP",
+    icon: Cpu,
+    items: ["MCP Servers", "AI Agents", "LLM Ops", "RAG Pipelines"],
+  },
 ];
 
 const stats = [
