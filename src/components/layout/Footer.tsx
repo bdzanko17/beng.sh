@@ -25,7 +25,7 @@ export function Footer() {
           {/* Social Links */}
           <div className="flex items-center gap-6">
             <a
-              href="https://github.com"
+              href={photographerInfo.socialLinks.instagram}
               target="_blank"
               rel="noopener noreferrer"
               className="text-muted-foreground hover:text-primary transition-colors"

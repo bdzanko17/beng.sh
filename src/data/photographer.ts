@@ -34,9 +34,9 @@ Whether architecting multi-cloud solutions or implementing zero-downtime deploym
   phone: '+43 XXX XXX XXXX',
   availability: 'Open to opportunities',
   socialLinks: {
-    instagram: 'https://github.com/benjamindzanko',
-    linkedin: 'https://linkedin.com/in/benjamindzanko',
-    behance: 'https://github.com/benjamindzanko'
+    instagram: 'https://github.com/bdzanko17',
+    linkedin: 'https://www.linkedin.com/in/benjamin-dzanko-86b061173/',
+    behance: 'https://github.com/bdzanko17'
   },
   portraitImage: ''
 };

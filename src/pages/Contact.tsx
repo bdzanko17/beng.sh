@@ -94,7 +94,7 @@ export default function Contact() {
                 </motion.button>
 
                 <motion.a
-                  href="https://github.com"
+                  href={photographerInfo.socialLinks.instagram}
                   target="_blank"
                   rel="noopener noreferrer"
                   whileHover={{ scale: 1.02 }}
