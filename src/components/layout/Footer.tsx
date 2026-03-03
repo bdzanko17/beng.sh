@@ -1,4 +1,4 @@
-import { Github, Linkedin, Heart, Coffee } from 'lucide-react';
+import { Github, Linkedin, Heart, Coffee, ExternalLink } from 'lucide-react';
 import { photographerInfo } from '@/data/photographer';
 
 /**
@@ -44,9 +44,18 @@ export function Footer() {
                 <Linkedin className="size-5" />
               </a>
             )}
-            <span className="font-mono text-xs text-muted-foreground">
-              <span className="text-primary">uptime:</span> 99.9%
-            </span>
+            {photographerInfo.socialLinks.buyMeACoffee && (
+              <a
+                href={photographerInfo.socialLinks.buyMeACoffee}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-muted-foreground hover:text-primary transition-colors flex items-center gap-1 font-mono text-xs"
+                aria-label="Buy Me a Coffee"
+              >
+                <Coffee className="size-4" />
+                <span>Buy me a coffee</span>
+              </a>
+            )}
           </div>
         </div>
       </div>
