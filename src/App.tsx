@@ -88,7 +88,7 @@ const App = () => (
         <TooltipProvider>
           <Toaster />
           <Sonner />
-          <BrowserRouter>
+          <BrowserRouter basename="/beng.sh">
             <SkipToContent />
             <Layout>
               <Suspense fallback={<LoadingFallback />}>
