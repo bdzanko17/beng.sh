@@ -24,7 +24,7 @@ export function ThemeToggle() {
         className="size-9"
         disabled
       >
-        <Sun className="size-5" />
+        <Moon className="size-5" />
       </Button>
     );
   }
