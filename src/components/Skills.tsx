@@ -59,6 +59,12 @@ const skills = [
     color: "text-foreground",
     items: ["Bash", "Python", "Go", "PowerShell"],
   },
+  {
+    category: "AI & MCP",
+    icon: Database,
+    color: "text-primary",
+    items: ["MCP Servers", "AI Agents", "LLM Ops", "RAG Pipelines"],
+  },
 ];
 
 export function Skills() {
